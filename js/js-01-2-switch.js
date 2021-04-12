@@ -1,6 +1,6 @@
 //  Количество звезд отеля и цена
 
-const stars = 0;
+const stars = 5;
 let price;
 
 switch(stars){
@@ -15,10 +15,11 @@ switch(stars){
     case 5:
         price = 60;
         break;
+   
     default:
         console.log('Enter quantity of stars please!');
-     
-}
-console.log(`Room in this hotel cost - ${price}$.`);
 
+}
+
+    console.log(`Room in this hotel cost - ${price}$.`);
 
