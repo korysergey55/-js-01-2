@@ -8,18 +8,20 @@ switch(stars){
     case 2:
     case 3:
         price = 25;
+        console.log(`Room in this hotel cost - ${price}$.`);
         break;
     case 4:
         price = 40;
+        console.log(`Room in this hotel cost - ${price}$.`);
         break;
     case 5:
         price = 60;
+        console.log(`Room in this hotel cost - ${price}$.`);
         break;
    
     default:
-        console.log('Enter quantity of stars please!');
-
+        console.log('Enter correct quantity of stars please!');
 }
 
-    console.log(`Room in this hotel cost - ${price}$.`);
+    
 
