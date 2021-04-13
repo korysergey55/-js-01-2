@@ -10,5 +10,30 @@ function checkIfCanAccessContent(subType) {
   checkIfCanAccessContent('pro');
   checkIfCanAccessContent('starter');
 
-
   
+// Задание Подписка пользователя
+function getSubscriptionPrice(type) {
+  let prise;
+ 
+ switch (type) { 
+    case 'starter': 
+      prise = 0; 
+      break;
+
+    case 'professional': 
+      prise = 20; 
+      break;
+
+    case 'organization': 
+      prise = 50; 
+      break;
+  }
+
+  return prise;
+}
+
+getSubscriptionPrice('professional');
+getSubscriptionPrice('organization');
+getSubscriptionPrice('starter');
+
+
