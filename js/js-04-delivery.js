@@ -1,8 +1,8 @@
 
-// Функция getShippingCost(country) должна проверять возможность доставки товара в страну пользователя (параметр country) и возвращать сообщение о результате хранящееся в переменной message. 
+// Функция должна проверять возможность доставки товара в страну пользователя (параметр country)
 
-
-function getShippingCost(country) {
+// и возвращать сообщение о результате хранящееся в переменной message. 
+const getShippingCost = function(country) {
     let message;
      
     switch(country){
@@ -20,6 +20,7 @@ function getShippingCost(country) {
         break;
         default: message = 'Извините, в вашу страну доставки нет';
     }
+    console.log(message);
 return message;
   }
   getShippingCost('Австралия');

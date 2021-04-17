@@ -1,39 +1,17 @@
-// Задание
-// Функция checkIfCanAccessContent(subType) проверяет, может ли пользователь получить доступ к контенту. Проверка происходит по типу подписки. Получить доступ могут только пользователи с подпиской pro или vip.
 
-function checkIfCanAccessContent(subType) {
-    const canAccessContent = subType === 'pro' || subType === 'vip'; 
-  
-    return canAccessContent;
-  }
-  
-  checkIfCanAccessContent('pro');
-  checkIfCanAccessContent('starter');
+// Функция  проверяет, может ли пользователь получить доступ к контенту.
 
-  
-// Задание Подписка пользователя
-function getSubscriptionPrice(type) {
-  let prise;
- 
- switch (type) { 
-    case 'starter': 
-      prise = 0; 
-      break;
+// Проверка происходит по типу подписки.
 
-    case 'professional': 
-      prise = 20; 
-      break;
+//  Получить доступ могут только пользователи с подпиской pro или vip.
 
-    case 'organization': 
-      prise = 50; 
-      break;
-  }
+const checkIfCanAccessContent = function (subType) {
+  const canAccessContent = subType === "pro" || subType === "vip";
 
-  return prise;
-}
-
-getSubscriptionPrice('professional');
-getSubscriptionPrice('organization');
-getSubscriptionPrice('starter');
-
-
+  console.log(
+    `может ли пользователь получить доступ к контенту - ${canAccessContent}`
+  );
+  return canAccessContent;
+};
+checkIfCanAccessContent("pro");
+checkIfCanAccessContent("starter");

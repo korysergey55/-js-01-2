@@ -1,6 +1,6 @@
 //  Disdount
 
-function getDiscount(totalSpent) {
+const getDiscount = function(totalSpent) {
   const BASE_DISCOUNT = 0;
   const BRONZE_DISCOUNT = 0.02;
   const SILVER_DISCOUNT = 0.05;
@@ -16,6 +16,7 @@ function getDiscount(totalSpent) {
     }else{
     discount = BASE_DISCOUNT;
     }
+    console.log(discount);
   return discount;
 }
 getDiscount(137000);

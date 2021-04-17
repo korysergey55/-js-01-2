@@ -1,6 +1,7 @@
-// Функция checkForSpam(message) принимает строку (параметр message), проверяет её на содержание запрещенных слов spam и sale, и возвращает результат проверки. Слова в строке параметра message могут быть в произвольном регистре, например SPAM или sAlE.
+// Функция  принимает строку (параметр message), проверяет её на содержание запрещенных слов spam и sale,и возвращает результат проверки.
+// Слова в строке параметра message могут быть в произвольном регистре, например SPAM или sAlE.
 
-function checkForSpam(message) {
+const checkForSpam = function(message) {
   let result;
   if (
     message.toLowerCase().includes("spam") ||
@@ -10,5 +11,8 @@ function checkForSpam(message) {
   } else {
     result = false;
   }
+  console.log('Слова в строке содержат слова SPAM или sAlE.', result);
   return result;
 }
+
+checkForSpam ('Функция  принимает строку проверяет её на содержание запрещенных слов spam и sale,и возвращает результат проверки.Слова в строке параметра message могут быть в произвольном регистре, например SPAM или sAlE.');
