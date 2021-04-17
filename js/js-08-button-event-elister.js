@@ -16,5 +16,4 @@ btnAdd.addEventListener('click', function(){
   total += valueInput;
   output.textContent = total;
 
-
 });
